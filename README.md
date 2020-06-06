@@ -8,7 +8,7 @@ timers are stored in categories,
 ```lua
 local category = when() or when:newCategory() 
 ```
-to create a timer and update a categorie contents call
+to create a timer and update a categories contents call
 
 ```lua
 local category, timerInstance = category(<number> time,<bool> loop, <function> callback, <any> arguments) or category:new("")
