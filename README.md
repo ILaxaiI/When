@@ -20,7 +20,7 @@ loop determins wether a timer will be removed after it has been completed
 to stop a timer call
 ```lua
   timerInstance:stop()
-  --or timer.isntance.Stop = true
+  --or timerIsntance.Stop = true
 ```
 this will remove that timer the next time category:update is called without calling its function
 
