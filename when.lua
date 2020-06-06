@@ -113,7 +113,7 @@ end
 --reset will call it once and set it the time back to 0
 
 function when:setMode(mode)
-  self.mode = assert(update[mode],'Unexpected timer mode, expected "loop" or "reset"')
+  self.mode = assert(update[mode] and mode,'Unexpected timer mode, expected "loop" or "reset"')
 end
 
 
