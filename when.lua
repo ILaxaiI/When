@@ -56,11 +56,8 @@ function when.instance:__tostring()
 end
 
 
-local mt = {}
-mt.__index = mt
-function mt.new() return setmetatable({[0] = 0,mode = "loop"},when) end
-mt.__call = mt.new
-setmetatable(when,mt)
+function when.newCategory() return setmetatable({[0] = 0,mode = "loop"},when) end
+setmetatable(when,{__call = when.newCategory})
 
 
 --calling when:new or timer() will create a new timer category
