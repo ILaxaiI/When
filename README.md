@@ -13,7 +13,7 @@ to create a timer and update a categories contents call
 ```lua
 local category, timerInstance = category(<number> time,<bool> loop, <function> callback, <any> arguments) or category:new("")
   --category is returned first so timer creation can be chained
-category:upadte(deltaTime)
+category:update(deltaTime)
 ```
 loop determins wether a timer will be removed after it has been completed
 
